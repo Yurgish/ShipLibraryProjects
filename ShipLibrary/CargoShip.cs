@@ -16,10 +16,16 @@ namespace ShipLibrary
         /// </summary>
         public string CargoType { get; set; } = "Unknown Cargo";
 
+        private double _cargoCapacity;
+
         /// <summary>
         /// Gets or sets the cargo capacity of the ship in tons.
         /// </summary>
-        public double CargoCapacity { get; set; } = 0;
+        public double CargoCapacity
+        {
+            get => _cargoCapacity;
+            set => _cargoCapacity = value < 0 ? 0 : value;
+        }
 
         /// <summary>
         /// Constructor to initialize a cargo ship with specific values.

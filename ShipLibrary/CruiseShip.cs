@@ -7,10 +7,20 @@ namespace ShipLibrary
     /// </summary>
     public class CruiseShip : Ship
     {
-        
-        public int TotalSeats { get; set; } = 1000;
 
-        public int OccupiedSeats { get; set; } = 0;
+        private int _totalSeats;
+        public int TotalSeats
+        {
+            get => _totalSeats;
+            set => _totalSeats = value < 0 ? 0 : value; 
+        }
+
+        private int _occupiedSeats;
+        public int OccupiedSeats
+        {
+            get => _occupiedSeats;
+            set => _occupiedSeats = value < 0 ? 0 : value;
+        }
 
         public int AvailableSeats => TotalSeats - OccupiedSeats;
 
@@ -28,7 +38,11 @@ namespace ShipLibrary
         /// <summary>
         /// Default constructor initializes the cruise ship with default values.
         /// </summary>
-        public CruiseShip() : base() { }
+        public CruiseShip() : base() {
+
+            TotalSeats = 1000; 
+            OccupiedSeats = 0;
+        }
 
         /// <summary>
         /// Overrides the ToString method to return information about the cruise ship.

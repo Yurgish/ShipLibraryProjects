@@ -11,18 +11,34 @@
 
         public string HomePort { get; set; } = "Unknown Port";
 
-        public double Displacement { get; set; } = 0;
+        private double _displacement;
+        public double Displacement
+        {
+            get => _displacement;
+            set => _displacement = value < 0 ? 0 : value; 
+        }
 
         public FullName CaptainName { get; set; } = new();
 
-        public int CrewCount { get; set; } = 0;
+        private int _crewCount;
+        public int CrewCount
+        {
+            get => _crewCount;
+            set => _crewCount = value < 0 ? 0 : value;
+        }
 
         public DateTime LaunchDate { get; set; } = DateTime.Now;
+        
+        private double _enginePower;
 
         /// <summary>
         /// The engine power in kilowatts.
         /// </summary>
-        public double EnginePower { get; set; } = 0;
+        public double EnginePower
+        {
+            get => _enginePower;
+            set => _enginePower = value < 0 ? 0 : value; 
+        }
 
         private double _currentSpeed;
 
