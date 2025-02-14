@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipLibrary", "ShipLibrary\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowCase", "ShowCase\ShowCase.csproj", "{0E17DB24-EE81-41F0-8D0C-AEDD4C0FDAAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipLibrary.Tests", "ShipLibrary.Tests\ShipLibrary.Tests.csproj", "{65C78DDD-FF5E-405B-9997-E2F68619E45C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0E17DB24-EE81-41F0-8D0C-AEDD4C0FDAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E17DB24-EE81-41F0-8D0C-AEDD4C0FDAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E17DB24-EE81-41F0-8D0C-AEDD4C0FDAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C78DDD-FF5E-405B-9997-E2F68619E45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C78DDD-FF5E-405B-9997-E2F68619E45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C78DDD-FF5E-405B-9997-E2F68619E45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C78DDD-FF5E-405B-9997-E2F68619E45C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
