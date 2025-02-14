@@ -13,7 +13,7 @@
 
         public double Displacement { get; set; } = 0;
 
-        public FullName CaptainName { get; set; } = new FullName();
+        public FullName CaptainName { get; set; } = new();
 
         public int CrewCount { get; set; } = 0;
 
@@ -59,6 +59,15 @@
             return $"Name: {Name}, Type: {Type}, Home Port: {HomePort}, Displacement: {Displacement} tons, " +
                    $"Captain: {CaptainName}, Crew Count: {CrewCount}, Launch Date: {LaunchDate.ToShortDateString()}, " +
                    $"Engine Power: {EnginePower} kW, Current Speed: {CurrentSpeed} knots.";
+        }
+
+        /// <summary>  
+        /// Prints the ship's information in a specified format.  
+        /// </summary>  
+        /// <param name="format">The format string to use for printing the ship's information.</param>  
+        public void PrintInfo(string format)
+        {
+            Console.WriteLine(string.Format(format, Name, Type, HomePort, Displacement, CaptainName, CrewCount, CurrentSpeed));
         }
     }
 }

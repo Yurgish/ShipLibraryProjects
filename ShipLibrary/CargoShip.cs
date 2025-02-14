@@ -9,7 +9,7 @@ namespace ShipLibrary
     /// <summary>
     /// Represents a cargo ship with specific cargo type and capacity.
     /// </summary>
-    class CargoShip : Ship
+    public class CargoShip : Ship
     {
         /// <summary>
         /// Gets or sets the type of cargo the ship carries.
