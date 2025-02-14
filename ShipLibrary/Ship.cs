@@ -56,7 +56,9 @@
         /// </summary>
         public override string ToString()
         {
-            return $"{Name} ({Type}) - Captain: {CaptainName}, Current Speed: {CurrentSpeed} knots.";
+            return $"Name: {Name}, Type: {Type}, Home Port: {HomePort}, Displacement: {Displacement} tons, " +
+                   $"Captain: {CaptainName}, Crew Count: {CrewCount}, Launch Date: {LaunchDate.ToShortDateString()}, " +
+                   $"Engine Power: {EnginePower} kW, Current Speed: {CurrentSpeed} knots.";
         }
     }
 }
