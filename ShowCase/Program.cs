@@ -30,6 +30,17 @@ namespace ShipConsoleApp
             cruiseShip.PrintInfo(format);
             Console.WriteLine(separator);
 
+            Console.WriteLine($"{"Cargo Ship Special Info",-20}:");
+            Console.WriteLine($"{"Cargo Type",-20}: {cargoShip.CargoType}");
+            Console.WriteLine($"{"Cargo Capacity",-20}: {cargoShip.CargoCapacity} tons");
+            Console.WriteLine(separator);
+
+            Console.WriteLine($"{"Cruise Ship Special Info",-20}:");
+            Console.WriteLine($"{"Total Seats",-20}: {cruiseShip.TotalSeats}");
+            Console.WriteLine($"{"Occupied Seats",-20}: {cruiseShip.OccupiedSeats}");
+            Console.WriteLine($"{"Available Seats",-20}: {cruiseShip.AvailableSeats}");
+            Console.WriteLine(separator);
+
             Console.ReadLine();
         }
     }
