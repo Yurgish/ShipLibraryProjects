@@ -1,4 +1,4 @@
-using ShipLibrary;
+﻿using ShipLibrary;
 
 namespace ShipLibrary.Tests
 {
